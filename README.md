@@ -8,7 +8,7 @@ proyecto de trabajo
 
 ## Recursos 
 -[Guia de markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
+-[MiDI]
 # Seguimiento 
 ## 19/042021
 ### ¿Qué hemos hecho?
