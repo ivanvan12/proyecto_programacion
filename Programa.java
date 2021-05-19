@@ -44,6 +44,7 @@ public class Programa{
 	{
 		String str; 
 		str = convertirUnicode("Á",cadena);
+		str = convertirUnicode("á",cadena);
 		str = convertirUnicode("á",str);
 		str = convertirUnicode("é",str);
 		str = convertirUnicode("í",str);
