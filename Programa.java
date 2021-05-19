@@ -51,6 +51,7 @@ public class Programa{
 		str = convertirUnicode("ú",str);
 		str = convertirUnicode("ñ",str);
 		str = convertirUnicode("É",str);
+		str = convertirUnicode("Ñ",str);
 
 		System.out.println(str);
 	}
