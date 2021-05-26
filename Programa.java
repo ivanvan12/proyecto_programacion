@@ -84,28 +84,27 @@ public class Programa{
 	}
 
 	public static void menu(){
-		System.out.println(ansi().eraseScreen().render("@green	 __________________________________________________________________"));
-		System.out.println(ansi().eraseScreen().render("@green	|								   |					 "));
-		System.out.println(ansi().eraseScreen().render("@green	|			═╗ ╦╔╦╗╦ ╦╔═╗╦╔═╗             		   |"));
-		System.out.println(ansi().eraseScreen().render("@green	|			╔╩╦╝║║║║ ║╚═╗║║  			   |"));
-		System.out.println(ansi().eraseScreen().render("@green	|			╩ ╚═╩ ╩╚═╝╚═╝╩╚═╝			   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                                                          	   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                    Ingrese una opción así:		 	   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                    1. Buscar canción			 	   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                    2. Reproducir canción			   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                    3. Mostrar Letra				   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                    4. Fragmento canción        		   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                    5. Detener Canción				   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                    6. Imprimir lista de Canciones		   |"));
-				  imprimir(ansi().eraseScreen().render("@green	|                    7. Salir					   |"));
-		System.out.println(ansi().eraseScreen().render("@green	|__________________________________________________________________|"));
-		System.out.print(ansi().eraseScreen().render("@green	XMusic$ "));
+		System.out.println("	 __________________________________________________________________");
+		System.out.println("	|								   |					 ");
+		System.out.println("	|			═╗ ╦╔╦╗╦ ╦╔═╗╦╔═╗             		   |");
+		System.out.println("	|			╔╩╦╝║║║║ ║╚═╗║║  			   |");
+		System.out.println("	|			╩ ╚═╩ ╩╚═╝╚═╝╩╚═╝			   |");
+				  imprimir("	|                                                          	   |");
+				  imprimir("	|                    Ingrese una opción así:		 	   |");
+				  imprimir("	|                    1. Buscar canción			 	   |");
+				  imprimir("	|                    2. Reproducir canción			   |");
+				  imprimir("	|                    3. Mostrar Letra				   |");
+				  imprimir("	|                    4. Fragmento canción        		   |");
+				  imprimir("	|                    5. Detener Canción				   |");
+				  imprimir("	|                    6. Imprimir lista de Canciones		   |");
+				  imprimir("	|                    7. Salir					   |");
+		System.out.println("	|__________________________________________________________________|");
+		System.out.print("	XMusic$ ");
 	}
 
 	public static void main(String[] args) {
 		
 		//AnsiConsole.systemInstall();
-		
 		Audio audio = new Audio();
 		int centinela = 0;	
 		int indice_cancion = 0;
@@ -130,6 +129,8 @@ public class Programa{
 				//TODO: Recuerde usar el helper ConsoleInput y validar
 				centinela = ConsoleInput.getInt();
 
+
+				
 				if(centinela == 2)
 				{
 					//TODO: Controlar que el archivo de la cancion exista
