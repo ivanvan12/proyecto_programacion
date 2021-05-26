@@ -84,30 +84,22 @@ public class Programa{
 	}
 
 	public static void menu(){
-		System.out.println("	 __________________________________________________________________");
-		System.out.println("	|                              _     _                             |");
-		System.out.println("	|                             ( \\---/ )                            |");
-		System.out.println("	|                              ) . . (                             |");
-		System.out.println("	|________________________,--._(___Y___)_,--.____________________hjw|");
-		System.out.println("	|                        `--'           `--'                       |");
-		System.out.println("	|		                  _   _  __                        |");
-		System.out.println("	|		                 | | (_)/ _|                       |");
-		System.out.println("	|		  ___ _ __   ___ | |_ _| |_ _   _                  |");
-		System.out.println("	|		 / __| '_ \\ / _ \\| __| |  _| | | |                 |");
-		System.out.println("	|		 \\__ \\ |_) | (_) | |_| | | | |_| |                 |");
-		System.out.println("	|		 |___/ .__/ \\___/ \\__|_|_|  \\__, |                 |");
-		System.out.println("	|		     | |                     __/ |                 |");
-		System.out.println("	|		     |_|                    |___/                  |");
-				  imprimir("	|                                                          	   |");
-				  imprimir("	|                    Ingrese una opción así:		 	   |");
-				  imprimir("	|                    1. Buscar canción			 	   |");
-				  imprimir("	|                    2. Reproducir canción			   |");
-				  imprimir("	|                    3. Mostrar Letra				   |");
-				  imprimir("	|                    4. Detener Canción				   |");
-				  imprimir("	|                    5. Imprimir info de canción		   |");
-				  imprimir("	|                    6. Salir					   |");
-		System.out.println("	|__________________________________________________________________|");
-		System.out.print("	Spotify$ ");
+		System.out.println(ansi().eraseScreen().render("@green	 __________________________________________________________________"));
+		System.out.println(ansi().eraseScreen().render("@green	|								   |					 "));
+		System.out.println(ansi().eraseScreen().render("@green	|			═╗ ╦╔╦╗╦ ╦╔═╗╦╔═╗             		   |"));
+		System.out.println(ansi().eraseScreen().render("@green	|			╔╩╦╝║║║║ ║╚═╗║║  			   |"));
+		System.out.println(ansi().eraseScreen().render("@green	|			╩ ╚═╩ ╩╚═╝╚═╝╩╚═╝			   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                                                          	   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                    Ingrese una opción así:		 	   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                    1. Buscar canción			 	   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                    2. Reproducir canción			   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                    3. Mostrar Letra				   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                    4. Fragmento canción        		   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                    5. Detener Canción				   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                    6. Imprimir lista de Canciones		   |"));
+				  imprimir(ansi().eraseScreen().render("@green	|                    7. Salir					   |"));
+		System.out.println(ansi().eraseScreen().render("@green	|__________________________________________________________________|"));
+		System.out.print(ansi().eraseScreen().render("@green	XMusic$ "));
 	}
 
 	public static void main(String[] args) {
